@@ -1,0 +1,29 @@
+{
+  "name": "mediafire-url-generator",
+  "version": "1.0.0",
+  "description": "Generates direct download link for mediafire files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xfrcc/mediafire-url-generator.git"
+  },
+  "keywords": [
+    "mediafire",
+    "url",
+    "download",
+    "direct"
+  ],
+  "author": "frcc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xfrcc/mediafire-url-generator/issues"
+  },
+  "homepage": "https://github.com/xfrcc/mediafire-url-generator#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
