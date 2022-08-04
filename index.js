@@ -10,11 +10,10 @@ const get = urlOrId => new Promise((resolve, reject) => {
     if (!isMediafireUrl) reject(new Error('Not a mediafire file url'));
     if (validMediafireIdentifierDL.test(urlOrId)) urlOrId = 'https://mediafire.com/?' + urlOrId;
     axios.get(urlOrId).then(res => {
-        const html = res.data.contents;
+        const html = res.data;
         const $ = cheerio.load(html);
         const elem = $('#downloadButton').first();
         const url = elem.attr('href'); 
-        console.log(!url);
         if (!url) {
             resolve(null);
         }
