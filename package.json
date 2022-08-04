@@ -1,6 +1,6 @@
 {
   "name": "mediafire-url-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates direct download link for mediafire files",
   "main": "index.js",
   "scripts": {
