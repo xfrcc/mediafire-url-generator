@@ -53,7 +53,7 @@ We thank the following people who contributed to this project:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/19640692" width="100px;" alt="Photo of Iuri Silva on GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/19640692" width="100px;" alt="Photo of Drew on GitHub"/><br>
         <sub>
           <b>Drew</b>
         </sub>
