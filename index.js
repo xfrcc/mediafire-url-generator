@@ -9,7 +9,7 @@ const get = urlOrId => new Promise((resolve, reject) => {
     const isMediafireUrl = (validMediafireIdentifierDL.test(urlOrId) || validMediafireShortDL.test(urlOrId) || validMediafireLongDL.test(urlOrId));
     if (!isMediafireUrl) reject(new Error('Not a mediafire file url'));
     if (validMediafireIdentifierDL.test(urlOrId)) urlOrId = 'https://mediafire.com/?' + urlOrId;
-    axios.get(`https://api.allorigins.win/get?url=${encodeURIComponent(urlOrId)}`).then(res => {
+    axios.get(urlOrId).then(res => {
         const html = res.data.contents;
         const $ = cheerio.load(html);
         const elem = $('#downloadButton').first();
